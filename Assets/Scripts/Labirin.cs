@@ -4,43 +4,20 @@ using UnityEngine;
 
 public class Labirin : MonoBehaviour
 {
-    private void Awake()
-    {
-        Debug.Log("Awake");
-    }
+    // Membuat variable untuk direferensikan ke object
+    [SerializeField]
+    GameObject labirin;
 
-    private void OnEnable()
+    void Start()
     {
-        Debug.Log("On Enable");
-    }
+        // Memunculkan nama object yang dimasukkan ke dalam variable labirin
+        Debug.Log(labirin.name);
+        // Memunculkan status active/non-active object yang dimasukkan ke dalam variable labirin
+        Debug.Log(labirin.activeInHierarchy);
 
-    private void Start()
-    {
-        Debug.Log("Start");
-    }
-
-    private void Update()
-    {
-        Debug.Log("Update");
-    }
-
-    private void LateUpdate()
-    {
-        Debug.Log("Late Update");
-    }
-
-    private void OnDisable()
-    {
-        Debug.Log("On Disable");
-    }
-
-    private void OnDestroy()
-    {
-        Debug.Log("On Destroy");
-    }
-
-    private void OnApplicationQuit()
-    {
-        Debug.Log("On Application Quit");
+        // Memunculkan nama object yang dimasukkan ke dalam variable labirin menjadi Maze
+        labirin.name = "Maze";
+        // Mengubah status object yang dimasukkan ke dalam variable labirin menjadi aktif
+        labirin.SetActive(true);
     }
 }
