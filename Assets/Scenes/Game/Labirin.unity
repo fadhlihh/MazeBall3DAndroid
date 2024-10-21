@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715883f79e273074ca3e9492d416dbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transformLabirin: {fileID: 29726560}
 --- !u!1 &96394733
 GameObject:
   m_ObjectHideFlags: 0
