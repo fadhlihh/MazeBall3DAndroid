@@ -4,13 +4,31 @@ using UnityEngine;
 
 public class Labirin : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Membuat variable nama dengan tipe string, dengan nilai awal "Agate"
+    [SerializeField]
+    string nama = "Agate";
+    // Membuat variable kecepatan dengan tipe float, dengan nilai awal "10.5"
+    [SerializeField]
+    float kecepatan = 10.5f;
+    // Membuat variable pemain menang dengan tipe bool, dengan nilai awal "false"
+    [SerializeField]
+    bool pemainMenang = false;
+    // Membuat variable posisi 2D dengan tipe Vector2, dengan nilai awal "(x: 0, y:0)"
+    [SerializeField]
+    Vector2 posisi2D = new Vector3(0, 0);
+    // Membuat variable posisi 3D dengan tipe Vector3, dengan nilai awal "(x: 0, y:0, z:0)"
+    [SerializeField]
+    Vector3 posisi3D = new Vector3(0, 0, 0);
+
+    // Membuat variable kecepatan dengan tipe integer, dengan nilai awal "100"
+    int score = 100;
+
     void Start()
     {
-        Debug.Log("Hello");
+        // Memunculkan log dengan nilai variable nama yaitu Agate
+        Debug.Log(nama);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
