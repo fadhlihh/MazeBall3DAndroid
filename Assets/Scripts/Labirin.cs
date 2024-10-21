@@ -25,12 +25,33 @@ public class Labirin : MonoBehaviour
 
     void Start()
     {
-        // Memunculkan log dengan nilai variable nama yaitu Agate
-        Debug.Log(nama);
+        // Memanggil function MunculkanLog(), 
+        // untuk memunculkan log dengan nilai variable nama yaitu Agate
+        MunculkanNama();
+
+        // Memanggil function TambahAngka(angka1: 5, angka2: 3), 
+        // untuk memunculkan log dengan nilai variable hasil tambah 5 + 3 = 8
+        TambahAngka(5, 3);
     }
 
     void Update()
     {
 
+    }
+
+    // Membuat function untuk memunculkan log dengan nilai variable nama
+    void MunculkanNama()
+    {
+        // Memunculkan log dengan nilai variable nama yaitu Agate
+        Debug.Log(nama);
+    }
+
+    // Membuat function untuk menambahkan angka
+    void TambahAngka(int angka1, int angka2)
+    {
+        // Membuat variable hasil, dengan nilai nya adalah hasil tambah angka1 dan angka2
+        int hasil = angka1 + angka2;
+        // Memunculkan log dengan nilai variable hasil
+        Debug.Log(hasil);
     }
 }
