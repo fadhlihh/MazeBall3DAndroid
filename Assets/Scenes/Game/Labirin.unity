@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29726560}
   - component: {fileID: 29726561}
+  - component: {fileID: 29726562}
   m_Layer: 0
   m_Name: Labirin
   m_TagString: Untagged
@@ -179,6 +180,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformLabirin: {fileID: 29726560}
   kecepatanRotasi: 20
+--- !u!54 &29726562
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29726559}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &96394733
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +836,7 @@ GameObject:
   - component: {fileID: 688330328}
   - component: {fileID: 688330327}
   - component: {fileID: 688330326}
+  - component: {fileID: 688330330}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Untagged
@@ -822,7 +851,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688330325}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: eab50246b01770b43bd06a04e78c0367, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -901,6 +930,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 29726560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &688330330
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688330325}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &769259454
 GameObject:
   m_ObjectHideFlags: 0
