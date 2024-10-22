@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformLabirin: {fileID: 29726560}
+  kecepatanRotasi: 20
 --- !u!1 &96394733
 GameObject:
   m_ObjectHideFlags: 0
