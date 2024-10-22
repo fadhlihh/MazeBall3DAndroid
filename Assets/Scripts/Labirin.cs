@@ -24,6 +24,15 @@ public class Labirin : MonoBehaviour
         // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
         // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
         transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
+    }
 
+    public void TekanKiri()
+    {
+        Debug.Log("Kiri");
+    }
+
+    public void TekanKanan()
+    {
+        Debug.Log("Kanan");
     }
 }
