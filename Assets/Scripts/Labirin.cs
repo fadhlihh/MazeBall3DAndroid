@@ -12,37 +12,48 @@ public class Labirin : MonoBehaviour
 
     Vector3 rotasiSekarang = new Vector3(0, 0, 0);
 
-    void Start()
-    {
-    }
-
     void Update()
     {
+
+    }
+
+    public void TekanAtas()
+    {
         // Mendapatkan nilai rotasi sekarang
-        // rotasi sekarang dirotasi di sumbu x +1 dengan kecepetan rotasi yang telah ditentukan
+        // rotasi sekarang dirotasi di sumbu x +1(arah atas)
         rotasiSekarang = rotasiSekarang + new Vector3(1, 0, 0) * kecepatanRotasi * Time.deltaTime;
         // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
         // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
         transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
     }
 
-    public void TekanAtas()
-    {
-        Debug.Log("Atas");
-    }
-
     public void TekanBawah()
     {
-        Debug.Log("Bawah");
+        // Mendapatkan nilai rotasi sekarang
+        // rotasi sekarang dirotasi di sumbu x -1(arah bawah)
+        rotasiSekarang = rotasiSekarang + new Vector3(-1, 0, 0) * kecepatanRotasi * Time.deltaTime;
+        // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
+        // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
+        transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
     }
 
     public void TekanKiri()
     {
-        Debug.Log("Kiri");
+        // Mendapatkan nilai rotasi sekarang
+        // rotasi sekarang dirotasi di sumbu y +1(arah kiri)
+        rotasiSekarang = rotasiSekarang + new Vector3(0, 0, 1) * kecepatanRotasi * Time.deltaTime;
+        // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
+        // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
+        transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
     }
 
     public void TekanKanan()
     {
-        Debug.Log("Kanan");
+        // Mendapatkan nilai rotasi sekarang
+        // rotasi sekarang dirotasi di sumbu y -1(arah kanan)
+        rotasiSekarang = rotasiSekarang + new Vector3(0, 0, -1) * kecepatanRotasi * Time.deltaTime;
+        // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
+        // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
+        transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
     }
 }

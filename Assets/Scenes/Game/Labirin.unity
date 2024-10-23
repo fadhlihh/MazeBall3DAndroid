@@ -296,7 +296,6 @@ Transform:
   - {fileID: 370399557}
   - {fileID: 627866765}
   - {fileID: 1600365709}
-  - {fileID: 688330329}
   - {fileID: 592728365}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -313,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformLabirin: {fileID: 29726560}
-  kecepatanRotasi: 20
+  kecepatanRotasi: 500
 --- !u!54 &29726562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1397,7 +1396,7 @@ Transform:
   m_LocalScale: {x: 0.8000001, y: 0.8000001, z: 0.8000001}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 29726560}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &688330330
 Rigidbody:
@@ -2718,6 +2717,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 96394736}
   - {fileID: 2028872416}
+  - {fileID: 688330329}
   - {fileID: 29726560}
   - {fileID: 2109067474}
   - {fileID: 219097056}
