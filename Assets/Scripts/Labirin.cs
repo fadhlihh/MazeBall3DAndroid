@@ -19,6 +19,10 @@ public class Labirin : MonoBehaviour
         // rotasi sekarang dirotasi dengan arah rotasi sesuai variable arahRotasi
         // dengan kecepatan sesuai variable kecepatanRotasi
         rotasiSekarang = rotasiSekarang + arahRotasi * kecepatanRotasi * Time.deltaTime;
+        // Membatasi rotasi di sumbu x, minimum -20, maksimum 20
+        rotasiSekarang.x = Mathf.Clamp(rotasiSekarang.x, -20, 20);
+        // Membatasi rotasi di sumbu x, minimum -20, maksimum 20
+        rotasiSekarang.z = Mathf.Clamp(rotasiSekarang.z, -20, 20);
         // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
         // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
         transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
