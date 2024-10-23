@@ -26,6 +26,16 @@ public class Labirin : MonoBehaviour
         transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
     }
 
+    public void TekanAtas()
+    {
+        Debug.Log("Atas");
+    }
+
+    public void TekanBawah()
+    {
+        Debug.Log("Bawah");
+    }
+
     public void TekanKiri()
     {
         Debug.Log("Kiri");

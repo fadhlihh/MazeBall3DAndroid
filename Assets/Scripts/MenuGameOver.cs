@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MenuGameOver : MonoBehaviour
 {
-    public void Retry()
+    public void Ulangi()
     {
-        Debug.Log("Retry");
+        Debug.Log("Ulangi");
     }
 
     public void MenuUtama()

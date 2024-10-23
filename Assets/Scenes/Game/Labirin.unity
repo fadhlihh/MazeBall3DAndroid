@@ -1137,7 +1137,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 596488001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 29726561}
+        m_TargetAssemblyTypeName: Labirin, Assembly-CSharp
+        m_MethodName: TekanKiri
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &596488001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,7 +1852,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1132087768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 29726561}
+        m_TargetAssemblyTypeName: Labirin, Assembly-CSharp
+        m_MethodName: TekanAtas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1132087768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2095,7 +2119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1593392373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 29726561}
+        m_TargetAssemblyTypeName: Labirin, Assembly-CSharp
+        m_MethodName: TekanBawah
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1593392373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2532,10 +2568,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1593392371}
   - {fileID: 1132087766}
   - {fileID: 596487999}
   - {fileID: 2143070160}
+  - {fileID: 1593392371}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2625,7 +2661,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2143070162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 29726561}
+        m_TargetAssemblyTypeName: Labirin, Assembly-CSharp
+        m_MethodName: TekanKanan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2143070162
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MenuUtama : MonoBehaviour
 {
-    public void Play()
+    public void Mainkan()
     {
-        Debug.Log("Play");
+        Debug.Log("Mainkan");
     }
 
-    public void Exit()
+    public void Keluar()
     {
         Debug.Log("Exit");
     }
