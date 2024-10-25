@@ -6,9 +6,12 @@ public class Bola : MonoBehaviour
 {
     [SerializeField]
     AudioSource sfxBola;
+    [SerializeField]
+    ParticleSystem vfxBola;
 
     private void OnCollisionEnter(Collision other)
     {
         sfxBola.Play();
+        vfxBola.Play();
     }
 }
